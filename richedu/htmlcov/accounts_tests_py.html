@@ -126,7 +126,7 @@
     <p id="t72" class="run"><span class="n"><a href="#t72">72</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertTrue</span><span class="op">(</span><span class="nam">admin_user</span><span class="op">.</span><span class="nam">is_active</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t73" class="run"><span class="n"><a href="#t73">73</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertTrue</span><span class="op">(</span><span class="nam">admin_user</span><span class="op">.</span><span class="nam">is_staff</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t74" class="run"><span class="n"><a href="#t74">74</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertTrue</span><span class="op">(</span><span class="nam">admin_user</span><span class="op">.</span><span class="nam">is_superuser</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t75" class="run"><span class="n"><a href="#t75">75</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertEquals</span><span class="op">(</span><span class="nam">admin_user</span><span class="op">.</span><span class="nam">email</span><span class="op">,</span><span class="str">'super@user.com'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t75" class="run"><span class="n"><a href="#t75">75</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertEquals</span><span class="op">(</span><span class="nam">str</span><span class="op">(</span><span class="nam">admin_user</span><span class="op">)</span><span class="op">,</span><span class="str">'super@user.com'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t76" class="pln"><span class="n"><a href="#t76">76</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t77" class="run"><span class="n"><a href="#t77">77</a></span><span class="t">    <span class="key">def</span> <span class="nam">test_user</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t78" class="run"><span class="n"><a href="#t78">78</a></span><span class="t">        <span class="nam">admin_user</span> <span class="op">=</span> <span class="nam">CustomUser</span><span class="op">.</span><span class="nam">objects</span><span class="op">.</span><span class="nam">create</span><span class="op">(</span><span class="nam">email</span><span class="op">=</span><span class="str">'super@user.com'</span><span class="op">,</span> <span class="nam">password</span><span class="op">=</span><span class="str">'foo'</span><span class="op">,</span><span class="nam">name</span><span class="op">=</span><span class="str">'shah'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -178,7 +178,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-05-31 18:53 +0530
+            created at 2021-06-01 09:07 +0530
         </p>
     </div>
 </div>
