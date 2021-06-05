@@ -1,0 +1,20 @@
+<html>
+<body>
+<h1>CRUD Function Based View Example</h1>  
+ 
+ <form method="POST" action = {% url 'users_edit' user.id %}>
+ {% csrf_token %}
+ {{user.id}}
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" readonly value={{user.email}} name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label >Name</label>
+    <input type="text" class="form-control" value={{user.name}} name="name" placeholder="Enter Name">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+ </body>  
+</html>
